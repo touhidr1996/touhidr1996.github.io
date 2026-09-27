@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Md. Touhidur Rahman — data science, trustworthy AI, and decision intelligence portfolio.">
+  <meta name="theme-color" content="#111b32">
+  <title>Md. Touhidur Rahman | Data Science & Trustworthy AI</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0c1426; --panel:#142139; --line:#2b3b55; --text:#f4f7fc; --muted:#b8c7da; --accent:#80dfcf; --accent2:#a9baff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:radial-gradient(circle at 80% 0%, #203451 0, transparent 38%),var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:inherit; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; border-radius:3px; }
+    .wrap { width:min(1120px,calc(100% - 40px)); margin-inline:auto; }
+    header { border-bottom:1px solid var(--line); }
+    .nav { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { text-decoration:none; font-size:1.05rem; font-weight:750; letter-spacing:-.025em; }
+    nav { display:flex; gap:clamp(14px,2.5vw,32px); flex-wrap:wrap; }
+    nav a { color:var(--muted); text-decoration:none; font-size:.93rem; }
+    nav a:hover, .text-link:hover { color:var(--accent); }
+    .hero { padding:clamp(76px,12vw,145px) 0 108px; display:grid; grid-template-columns:1.6fr .65fr; gap:40px; align-items:center; }
+    .eyebrow { margin:0 0 18px; color:var(--accent); font-size:.81rem; font-weight:750; letter-spacing:.14em; text-transform:uppercase; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { font-size:clamp(2.7rem,6.2vw,5.25rem); line-height:1.08; letter-spacing:-.055em; margin-bottom:25px; }
+    h1 span { color:var(--accent); }
+    .lead { max-width:670px; color:var(--muted); font-size:clamp(1.08rem,1.8vw,1.3rem); line-height:1.7; }
+    .actions { display:flex; flex-wrap:wrap; gap:13px; margin-top:33px; }
+    .button { display:inline-flex; align-items:center; min-height:46px; padding:10px 19px; border:1px solid var(--accent); border-radius:8px; font-weight:700; text-decoration:none; background:var(--accent); color:#09252a; }
+    .button.secondary { color:var(--text); background:transparent; border-color:#6c829f; }
+    .button:hover { transform:translateY(-2px); filter:brightness(1.08); }
+    .hero-aside { padding:27px; border:1px solid var(--line); border-radius:18px; background:linear-gradient(155deg,#1c3149,#121e34); box-shadow:0 18px 55px #050c1a66; }
+    .hero-aside p { color:var(--muted); margin-bottom:0; }
+    .hero-aside strong { color:var(--text); display:block; margin-bottom:13px; font-size:1.05rem; }
+    .dot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:8px; background:var(--accent); }
+    section { padding:64px 0; scroll-margin-top:30px; }
+    .section-head { max-width:740px; margin-bottom:30px; }
+    h2 { font-size:clamp(1.8rem,3vw,2.65rem); line-height:1.2; letter-spacing:-.035em; margin-bottom:13px; }
+    .section-head p, .about p, .contact p { color:var(--muted); }
+    .about { display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(32px,6vw,90px); border-block:1px solid var(--line); }
+    .chips { display:flex; flex-wrap:wrap; gap:9px; align-content:start; }
+    .chip { border:1px solid var(--line); border-radius:99px; padding:6px 12px; color:#d4e3f3; font-size:.87rem; background:#17243b; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:17px; }
+    .card { min-height:232px; padding:27px; background:var(--panel); border:1px solid var(--line); border-radius:14px; display:flex; flex-direction:column; }
+    .card small { color:var(--accent); text-transform:uppercase; letter-spacing:.09em; font-weight:750; }
+    .card h3 { font-size:1.26rem; line-height:1.3; margin:14px 0 9px; }
+    .card p { color:var(--muted); margin-bottom:19px; }
+    .text-link { color:var(--accent2); text-decoration:underline; text-underline-offset:4px; font-weight:650; margin-top:auto; }
+    .research { border-block:1px solid var(--line); }
+    .research-layout { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+    .research-layout p { color:var(--muted); }
+    .contact { text-align:center; padding:86px 0 96px; }
+    .contact p { max-width:570px; margin-inline:auto; }
+    footer { border-top:1px solid var(--line); padding:24px 0; color:var(--muted); font-size:.88rem; }
+    footer .wrap { display:flex; justify-content:space-between; gap:15px; flex-wrap:wrap; }
+    @media (max-width:780px) { .hero,.about,.research-layout { grid-template-columns:1fr; } .hero { padding:76px 0 62px; } .hero-aside { max-width:450px; } }
+    @media (max-width:590px) { .nav { align-items:flex-start; padding:18px 0; flex-direction:column; } .grid { grid-template-columns:1fr; } section { padding:54px 0; } .card { min-height:0; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .button:hover { transform:none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">Md. Touhidur Rahman</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">Data Science · Trustworthy AI · Decision Intelligence</p>
+        <h1>Turning complex data into <span>reliable decisions.</span></h1>
+        <p class="lead">I’m Md. Touhidur Rahman, an Informatics master’s graduate of Shizuoka University. I build reproducible machine learning, analytics, and optimization projects with clear evaluation and practical constraints.</p>
+        <div class="actions">
+          <a class="button" href="#projects">Explore projects</a>
+          <a class="button secondary" href="https://github.com/touhidr1996" target="_blank" rel="noopener noreferrer">View GitHub profile ↗</a>
+        </div>
+      </div>
+      <aside class="hero-aside" aria-label="Current focus">
+        <strong><span class="dot"></span>Current focus</strong>
+        <p>Trustworthy LLM evaluation, smart manufacturing analytics, multi-agent systems, and decision support.</p>
+      </aside>
+    </div>
+    <section id="about" class="about wrap" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">About me</p>
+        <h2 id="about-title">Research thinking, practical engineering.</h2>
+        <p>My work connects data science with the decisions people need to make. I care about sound baselines, leakage-aware validation, interpretable results, and honest limitations.</p>
+        <p>My interests include information retrieval, LLM-based judgments, bias and fairness, industrial AI, and constrained optimization.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Toolkit</p>
+        <div class="chips" aria-label="Technical skills">
+          <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">scikit-learn</span><span class="chip">OR-Tools</span><span class="chip">Model evaluation</span><span class="chip">Data pipelines</span><span class="chip">Visualization</span><span class="chip">GitHub Actions</span>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="wrap" aria-labelledby="projects-title">
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="projects-title">Projects</h2>
+        <p>Selected repositories spanning reliable AI, analytics, and optimization. Each link opens the source code and documentation.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><small>LLM evaluation</small><h3>LLM Judgment Reliability Atlas</h3><p>Tools and analysis for inspecting the reliability of model-generated judgments.</p><a class="text-link" href="https://github.com/touhidr1996/llm-judgment-reliability-atlas" target="_blank" rel="noopener noreferrer">View repository ↗</a></article>
+        <article class="card"><small>Trustworthy AI</small><h3>Model Risk Workbench</h3><p>A portfolio project focused on model risk, evaluation, and responsible AI practice.</p><a class="text-link" href="https://github.com/touhidr1996/trustworthy-ai-model-risk-workbench" target="_blank" rel="noopener noreferrer">View repository ↗</a></article>
+        <article class="card"><small>Master’s research</small><h3>LLM + CP-SAT Decision Framework</h3><p>Hybrid LLM and constraint optimization for safety-aware EV allocation and routing.</p><a class="text-link" href="https://github.com/touhidr1996/llm-cpsat-ev-decision-framework" target="_blank" rel="noopener noreferrer">View repository ↗</a></article>
+        <article class="card"><small>Industrial AI</small><h3>Wafer Map Pattern Inspector</h3><p>Spatial defect pattern recognition with interpretable image features and grouped evaluation.</p><a class="text-link" href="https://github.com/touhidr1996/wafer-map-pattern-inspector" target="_blank" rel="noopener noreferrer">View repository ↗</a></article>
+        <article class="card"><small>Analytics engineering</small><h3>Customer Insights Pipeline</h3><p>Reproducible data processing, validated tables, and decision-focused business metrics.</p><a class="text-link" href="https://github.com/touhidr1996/customer-insights-analytics-pipeline" target="_blank" rel="noopener noreferrer">View repository ↗</a></article>
+        <article class="card"><small>Smart manufacturing</small><h3>Semiconductor Yield Guardian</h3><p>Rare defect risk assessment using process signals and operational evaluation metrics.</p><a class="text-link" href="https://github.com/touhidr1996/semiconductor-yield-guardian" target="_blank" rel="noopener noreferrer">View repository ↗</a></article>
+      </div>
+    </section>
+    <section id="research" class="research" aria-labelledby="research-title">
+      <div class="wrap">
+        <p class="eyebrow">Research interests</p>
+        <h2 id="research-title">Reliable AI in real decisions</h2>
+        <div class="research-layout">
+          <p>I am interested in how we evaluate AI-generated judgments: when models disagree with people, how bias can affect assessment, and what makes an evaluation trustworthy.</p>
+          <p>I also explore multi-agent decision making and constraint-based optimization, where a useful answer must satisfy practical policies and operational limits.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact wrap" aria-labelledby="contact-title">
+      <p class="eyebrow">Get in touch</p>
+      <h2 id="contact-title">Let’s connect.</h2>
+      <p>Interested in collaborating or discussing data science, trustworthy AI, or research? You can reach me through my GitHub profile.</p>
+      <a class="button" href="https://github.com/touhidr1996" target="_blank" rel="noopener noreferrer">Visit my GitHub ↗</a>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© 2026 Md. Touhidur Rahman</span><span>Built with GitHub Pages</span></div></footer>
+</body>
+</html>
